@@ -125,10 +125,3 @@ karate-summary.html: Un resumen general de las ejecuciones.
 
 
 Para ver los reportes, solo abre karate-summary.html  en tu navegador.
-
-🙋‍♂️ Autor
-
-Yrvin Pachas – QA Automation Junior @ Inetum
-
-
-
