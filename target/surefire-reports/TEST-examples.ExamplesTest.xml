@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="8.43" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\USUARIO\Downloads\SOAINTBackQA-main\target\test-classes;C:\Users\USUARIO\Downloads\SOAINTBackQA-main\target\classes;C:\Users\USUARIO\.m2\repository\com\intuit\karate\karate-junit5\1.4.1\karate-junit5-1.4.1.jar;C:\Users\USUARIO\.m2\repository\com\intuit\karate\karate-core\1.4.1\karate-core-1.4.1.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\js\js-scriptengine\22.3.3\js-scriptengine-22.3.3.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.3\graal-sdk-22.3.3.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\js\js\22.3.3\js-22.3.3.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\regex\regex\22.3.3\regex-22.3.3.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\truffle\truffle-api\22.3.3\truffle-api-22.3.3.jar;C:\Users\USUARIO\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\USUARIO\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\USUARIO\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\USUARIO\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\USUARIO\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\USUARIO\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\USUARIO\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\USUARIO\.m2\repository\com\linecorp\armeria\armeria\1.25.2\armeria-1.25.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\USUARIO\.m2\repository\io\micrometer\micrometer-core\1.11.3\micrometer-core-1.11.3.jar;C:\Users\USUARIO\.m2\repository\io\micrometer\micrometer-commons\1.11.3\micrometer-commons-1.11.3.jar;C:\Users\USUARIO\.m2\repository\io\micrometer\micrometer-observation\1.11.3\micrometer-observation-1.11.3.jar;C:\Users\USUARIO\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\USUARIO\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-haproxy\4.1.96.Final\netty-codec-haproxy-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-http2\4.1.96.Final\netty-codec-http2-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver-dns\4.1.96.Final\netty-resolver-dns-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-dns\4.1.96.Final\netty-codec-dns-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\USUARIO\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-handler-proxy\4.1.96.Final\netty-handler-proxy-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-socks\4.1.96.Final\netty-codec-socks-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.96.Final\netty-resolver-dns-classes-macos-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-classes\2.0.61.Final\netty-tcnative-classes-2.0.61.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\Users\USUARIO\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.12.0\brotli4j-1.12.0.jar;C:\Users\USUARIO\.m2\repository\com\aayushatharva\brotli4j\service\1.12.0\service-1.12.0.jar;C:\Users\USUARIO\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.12.0\native-windows-x86_64-1.12.0.jar;C:\Users\USUARIO\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\USUARIO\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\USUARIO\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\USUARIO\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\USUARIO\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\USUARIO\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\USUARIO\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\USUARIO\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\USUARIO\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\USUARIO\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\USUARIO\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\USUARIO\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\USUARIO\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\USUARIO\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\USUARIO\.m2\repository\io\github\classgraph\classgraph\4.8.160\classgraph-4.8.160.jar;C:\Users\USUARIO\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\USUARIO\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\USUARIO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\USUARIO\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\USUARIO\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\USUARIO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\USUARIO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\USUARIO\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="karate.env" value="CERTI"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\USUARIO\AppData\Local\Temp\surefire16612929612630401976\surefirebooter-20250912100207888_3.jar C:\Users\USUARIO\AppData\Local\Temp\surefire16612929612630401976 2025-09-12T10-02-07_654-jvmRun1 surefire-20250912100207888_1tmp surefire_0-20250912100207888_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\USUARIO\Downloads\SOAINTBackQA-main\target\test-classes;C:\Users\USUARIO\Downloads\SOAINTBackQA-main\target\classes;C:\Users\USUARIO\.m2\repository\com\intuit\karate\karate-junit5\1.4.1\karate-junit5-1.4.1.jar;C:\Users\USUARIO\.m2\repository\com\intuit\karate\karate-core\1.4.1\karate-core-1.4.1.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\js\js-scriptengine\22.3.3\js-scriptengine-22.3.3.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.3\graal-sdk-22.3.3.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\js\js\22.3.3\js-22.3.3.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\regex\regex\22.3.3\regex-22.3.3.jar;C:\Users\USUARIO\.m2\repository\org\graalvm\truffle\truffle-api\22.3.3\truffle-api-22.3.3.jar;C:\Users\USUARIO\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\USUARIO\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\USUARIO\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\USUARIO\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\USUARIO\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\USUARIO\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\USUARIO\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\USUARIO\.m2\repository\com\linecorp\armeria\armeria\1.25.2\armeria-1.25.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\USUARIO\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\USUARIO\.m2\repository\io\micrometer\micrometer-core\1.11.3\micrometer-core-1.11.3.jar;C:\Users\USUARIO\.m2\repository\io\micrometer\micrometer-commons\1.11.3\micrometer-commons-1.11.3.jar;C:\Users\USUARIO\.m2\repository\io\micrometer\micrometer-observation\1.11.3\micrometer-observation-1.11.3.jar;C:\Users\USUARIO\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\USUARIO\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-haproxy\4.1.96.Final\netty-codec-haproxy-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-http2\4.1.96.Final\netty-codec-http2-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver-dns\4.1.96.Final\netty-resolver-dns-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-dns\4.1.96.Final\netty-codec-dns-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\USUARIO\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-handler-proxy\4.1.96.Final\netty-handler-proxy-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-codec-socks\4.1.96.Final\netty-codec-socks-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.96.Final\netty-resolver-dns-classes-macos-4.1.96.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-classes\2.0.61.Final\netty-tcnative-classes-2.0.61.Final.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\Users\USUARIO\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\Users\USUARIO\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.12.0\brotli4j-1.12.0.jar;C:\Users\USUARIO\.m2\repository\com\aayushatharva\brotli4j\service\1.12.0\service-1.12.0.jar;C:\Users\USUARIO\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.12.0\native-windows-x86_64-1.12.0.jar;C:\Users\USUARIO\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\USUARIO\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\USUARIO\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\USUARIO\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\USUARIO\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\USUARIO\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\USUARIO\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\USUARIO\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\USUARIO\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\USUARIO\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\USUARIO\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\USUARIO\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\USUARIO\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\USUARIO\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\USUARIO\.m2\repository\io\github\classgraph\classgraph\4.8.160\classgraph-4.8.160.jar;C:\Users\USUARIO\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\USUARIO\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\USUARIO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\USUARIO\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\USUARIO\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\USUARIO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\USUARIO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\USUARIO\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\USUARIO"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\USUARIO\Downloads\SOAINTBackQA-main"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\USUARIO\AppData\Local\Temp\surefire16612929612630401976\surefirebooter-20250912100207888_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
+    <property name="user.name" value="USUARIO"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\USUARIO\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\USUARIO\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="C:\Users\USUARIO\Downloads\SOAINTBackQA-main"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\Rational\common;C:\xampp\php;C:\composer;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\apache-maven\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin;C:\Users\USUARIO\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.11+7-LTS-207"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="8.402">
+    <system-out><![CDATA[10:02:09.270 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': CERTI
+10:02:10.269 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:02:10.292 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+10:02:12.380 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: CERTI 
+10:02:12.380 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: CERTI 
+10:02:12.380 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: CERTI 
+10:02:12.380 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: CERTI 
+10:02:12.380 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: CERTI 
+10:02:13.161 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:02:13.212 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 142
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Sandro Huamán Mendoza","email":"sandro+d4e32eea-635f-4eea-8e82-be5795eaae68@gmail.com","password":"testerQA","administrador":"true"}
+
+10:02:13.212 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 142
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Sandro Huamán Mendoza","email":"sandro+1276cfef-358a-4410-8993-cf602e6b41d3@gmail.com","password":"testerQA","administrador":"true"}
+
+10:02:13.212 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 142
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Sandro Huamán Mendoza","email":"sandro+281f0530-6f42-477c-be41-06cd62a32f4a@gmail.com","password":"testerQA","administrador":"true"}
+
+10:02:13.212 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 142
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Sandro Huamán Mendoza","email":"sandro+b74060f7-7c6c-4497-bc88-d065ade12475@gmail.com","password":"testerQA","administrador":"true"}
+
+10:02:14.019 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 801
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 45ff9e1602ec8bbbbdebaed42ebf84db
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "HxYyeuxDNjWngDss"
+}
+
+10:02:14.019 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 801
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 9e9a6ad878459483f24be2be7e3819c0
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "MiKq1cWfw9YZPqsd"
+}
+
+10:02:14.021 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 806
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 21a193feb0bd156af7d65beeb5f9d0df
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "RsOq6kSecDinLcPu"
+}
+
+10:02:14.063 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: CERTI 
+10:02:14.067 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 852
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 9ade82aea3b78bffae8435c5abf13d22
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "Z8ZGWZxt5rtGaTe0"
+}
+
+10:02:14.067 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 904
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: fb6a4dca15611dbe7077255bccc64712
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 16977
+{
+    "quantidade": 73,
+    "usuarios": [
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757683864789@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "0KuP2PJQPNADdKs3"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+368830f6-c923-4da3-91da-e3406e84e450@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "0rQGaXVldR38BMJR"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "João Paulo",
+            "email": "joaopaulodevia@gmail.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "19wxsD7j8GVPelau"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+b3e56352-8453-4049-a61e-2b2625d381ce@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "2zgNr2Nlklovfwr3"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+712affe8-61f7-49b8-88d3-e953afa94657@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "3itZRw72TjqudJDT"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757685627984@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "4JzzmatYqreX2hxj"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+a67e8f74-281a-464a-944b-2c3d31e672a8@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "5sQn2mw5IQb5uLWe"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+cf41d7d3-c974-4d87-b839-74935927b504@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "6eoaPbBxQArv4HPN"
+        },
+        {
+            "nome": "NuevoNombre",
+            "email": "pardito@gmail.com",
+            "password": "nuevoPass123",
+            "administrador": "false",
+            "_id": "6zTyLzisIzcr6ePR"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757684421034@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "7VKrWE7fAfaQH9r4"
+        },
+        {
+            "nome": "Abc MDH",
+            "email": "ahsgagsags@qa.com.br",
+            "password": "teste456",
+            "administrador": "true",
+            "_id": "7my51npMFALYeRtl"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+b1209d90-8de3-4373-bd61-dc8aee0cd8b3@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "803UNszXlLVTlYg8"
+        },
+        {
+            "nome": "Yrvin put",
+            "email": "yrvin+162d108a-94a1-4dfe-9b7c-ed4469f20df6@gmail.com",
+            "password": "nuevo",
+            "administrador": "false",
+            "_id": "90gtABnHHnxrIg5B"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757683299973@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "955w1iADu5Rk51gN"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+b90b10b4-6c17-4694-8c7a-31e65748d333@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "9Q9Q9M7en4cV1sbj"
+        },
+        {
+            "nome": "Sandro Huamán Mendoza",
+            "email": "sandro+7ec12258-9f0e-4b9c-81fc-c7ce7edeb4c7@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "9vi3Bl1jlacBxG1G"
+        },
+        {
+            "nome": "Sandro Huamán Mendoza",
+            "email": "sandro+1d1a9ab1-1838-47b2-8ad0-f92c5aa5a595@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "AW8iXOLUwDiutF6O"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757685624912@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "Cv5fey9nYHNaRI29"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757684017267@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "CyOxtr4IORWlXvOu"
+        },
+        {
+            "nome": "Usuário Teste",
+            "email": "user1757683754467@teste.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "DR3yGjQJTgXXPooK"
+        },
+        {
+            "nome": "Yrvin put",
+            "email": "yrvin+d609b105-2e98-4cb2-a798-d658f2f8543a@gmail.com",
+            "password": "nuevo",
+            "administrador": "false",
+            "_id": "DvXmZYeJc6L65J9H"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757684004483@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ECCjlfq7djcZ5L94"
+        },
+        {
+            "nome": "Yrvin put",
+            "email": "yrvin+f9e483cd-cb12-44d2-851c-36f80aed2401@gmail.com",
+            "password": "nuevo",
+            "administrador": "false",
+            "_id": "ElBN4LInXxxgemcF"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757687275647@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ExnXmKPb3XFonh7E"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+16780429-d407-4c8f-99a9-a1e15b73df7b@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "FkrJrRttnS8WY13R"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757685620603@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "GoPFJltzlKzXMGVX"
+        },
+        {
+            "nome": "ícaro cau",
+            "email": "icaro1757684075542@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "J0wzlcCxPk1tzxMk"
+        },
+        {
+            "nome": "Sandro Huaman ",
+            "email": "sandroingsistemas30@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "JUiOq9fDpPjeEjJ6"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757685602978@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "Jon7QyFY6911oXFI"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+bcf03d8c-f7eb-4db5-b17e-d05efdc6fdb4@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "KGyhO6xzIpCVuntm"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757684466106@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "LYklndHHaMzMho5Z"
+        },
+        {
+            "nome": "Yrvin put",
+            "email": "yrvin+3e7295cf-b7a0-4f50-831d-ad107fcb88a0@gmail.com",
+            "password": "nuevo",
+            "administrador": "false",
+            "_id": "MUEGDHQ1vKF7pCqC"
+        },
+        {
+            "nome": "Sandro Huamán Mendoza",
+            "email": "sandro+a5933fde-b92d-4d70-8fcf-289fde8e60b7@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "NxVFS8Yuc8R0dIMc"
+        },
+        {
+            "nome": "Sandro Huamán Mendoza",
+            "email": "sandro+f87317ae-a725-4a36-b0e0-a7d64ac37116@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "OhJH5y83yQ2v9B7E"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757683268930@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "PRolIy1GH8RdTZgR"
+        },
+        {
+            "nome": "Yrvin Pachas ",
+            "email": "yrvin21pachas2004@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "QqzrqquktUe4giB5"
+        },
+        {
+            "nome": "ícaro cau",
+            "email": "icaro1757684173383@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "R0L0gHHJXjKhWKms"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+df333a7b-d464-4a83-b0e5-749659934db7@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "RDUgyCkY5eUz2Bow"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+30f2c7e4-3875-4072-8b0b-7afb4a9c9aaa@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "RLIdd52hTwKr6jei"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757684005753@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "RZC916La3trUtbe5"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757683913707@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "RqhGAaU4Cxmddwju"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757683799234@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "SFZIY0XTvoDCv69W"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757684033739@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "UtmT7oZVhpiE3OLD"
+        },
+        {
+            "nome": "L",
+            "email": "icaro1757684460006@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "WaSvjREUnEWwcVlg"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+aa6b43a5-f21b-4ffd-b572-8bd6af16772b@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "Wg5LTRLskHoDxOCZ"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+7dc7ab69-35ba-440d-9b5e-2b37ef4b665f@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "XwuhItaAyPRtirBj"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+2b0493ba-56f1-49a5-804b-375ff093e68f@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "bE9o0AozQxqtCuGx"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757683911747@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "beEwlRnNCy502WUP"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+72cf23f5-80d4-4551-9c7e-923c3207e572@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "bq7GxEFqL9Llf041"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757685615931@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "cumrK3Y1CHVWmybe"
+        },
+        {
+            "nome": "Yrvin put",
+            "email": "yrvin+aa6fe5a9-a951-416d-9928-cfe335ffde5b@gmail.com",
+            "password": "nuevo",
+            "administrador": "false",
+            "_id": "dJriTEvkVGS8czbL"
+        },
+        {
+            "nome": "Sandro put",
+            "email": "sandro+8b31c5b9-4c94-4676-a2aa-4d2e6d5d12d8@gmail.com",
+            "password": "nuevo",
+            "administrador": "false",
+            "_id": "eBNwh7mSVMySwrFA"
+        },
+        {
+            "nome": "Fake",
+            "email": "fake@test.com",
+            "password": "123",
+            "administrador": "true",
+            "_id": "ek3fcbpYaGh2H7WH"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+7dc3a9ff-29e6-404e-ad4b-d91853567415@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "fRjwstjDLcocwT6R"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+cc11971c-1354-4167-ace8-a5951dc479da@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "fn867pDWXvVZt8Ng"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+cc646a6d-e9c8-4403-b668-c5172642e03b@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "frJld66tlzENSuhu"
+        },
+        {
+            "nome": "Ícaro Cau",
+            "email": "icaro1757684478769@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "gDiOi1zX2pLZqiiQ"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757684013802@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "n03FAAZTzC0DtBjF"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757684321709@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ng4qFF0InbG1ngmb"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+3a575134-d765-48bd-bbf0-78c102d84b26@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "oO7ZUYblQnsg2ZCK"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+702b5492-5b4e-44cb-a257-c12a6e56318a@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "oQOgSG1SSQJVNGjo"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "icaro1757684454913@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "pTNHI7kA8nkw2B3O"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+83be0d3d-70e4-4008-8e94-04e932eee67e@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "rvlwEkUvwwkYvDNx"
+        },
+        {
+            "nome": "ícaro cau",
+            "email": "lucas1757684071134@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "s2iGBra9iDEREws6"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+e97f53df-721c-4431-a00c-5c3a017fc856@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "sdbBnzDrYWFAIg0s"
+        },
+        {
+            "nome": "Gus da Silva",
+            "email": "gusilva@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "siiXO6OJTOD1i7Fb"
+        },
+        {
+            "nome": "Ícaro ",
+            "email": "icaro1757684464680@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "swkUciVdoSycgBpO"
+        },
+        {
+            "nome": "Yrvin Pachas Saravia",
+            "email": "yrvin+92412397-3970-4286-851e-9bdddec35dd0@gmail.com",
+            "password": "testerQA",
+            "administrador": "true",
+            "_id": "tRcxdAYA2B39HKk9"
+        },
+        {
+            "nome": "Léo QA",
+            "email": "qa1757683741595@teste.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "w8oCT6vLbesnXF32"
+        },
+        {
+            "nome": "Yrvin put",
+            "email": "yrvin+5bd32da0-dfca-4ad4-ab27-d34126417608@gmail.com",
+            "password": "nuevo",
+            "administrador": "false",
+            "_id": "xSPDeNodycgnyDOm"
+        },
+        {
+            "nome": "Lucas Silva",
+            "email": "lucas1757684311945@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "xUKKwCHzjx1vCUpj"
+        },
+        {
+            "nome": "Testes Tacon",
+            "email": "testes@testes.com",
+            "password": "testes01",
+            "administrador": "false",
+            "_id": "xUhOI6tsypP7l3dI"
+        }
+    ]
+}
+
+10:02:14.068 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 108
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Sandro Huaman ","email":"sandroingsistemas30@gmail.com","password":"123456","administrador":"true"}
+
+10:02:14.086 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios/79UndqZN5oz4LU2a
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:02:14.097 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > DELETE https://serverest.dev/usuarios/MiKq1cWfw9YZPqsd
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:02:14.097 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios/Z8ZGWZxt5rtGaTe0
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:02:14.136 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: CERTI 
+10:02:14.170 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 142
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Sandro Huamán Mendoza","email":"sandro+a421de9f-8c74-4e81-af6b-fd9f308abcaa@gmail.com","password":"testerQA","administrador":"true"}
+
+10:02:14.619 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 547
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: a60c9e2bd7b0a8e36e9e7632a86775bf
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+10:02:14.626 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: CERTI 
+10:02:14.640 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 142
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Sandro Huamán Mendoza","email":"sandro+72ca6ec5-6476-4f5f-8291-7b3ce7a567d8@gmail.com","password":"testerQA","administrador":"true"}
+
+10:02:14.672 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 573
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: c58377e9ca8aa7219b3320583f4f03a9
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 198
+{
+    "nome": "Sandro Huamán Mendoza",
+    "email": "sandro+281f0530-6f42-477c-be41-06cd62a32f4a@gmail.com",
+    "password": "testerQA",
+    "administrador": "true",
+    "_id": "Z8ZGWZxt5rtGaTe0"
+}
+
+10:02:14.672 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 573
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 63bd0386291c92a732ead760e2fe2944
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 51
+{
+    "message": "Registro excluído com sucesso"
+}
+
+10:02:14.672 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 585
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: c154035947a24c04a5abc164ef51188b
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 45
+{
+    "message": "Usuário não encontrado"
+}
+
+10:02:14.692 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 519
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 83cc38c8a9eaedbd384eec3ba9016513
+1 < date: Fri, 12 Sep 2025 15:02:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "ms9O7iOIJv3TsxO9"
+}
+
+10:02:14.705 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > PUT https://serverest.dev/usuarios/ms9O7iOIJv3TsxO9
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 128
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Sandro put","email":"sandro+0ecb18d4-a620-43d9-b9ef-4aadf7e58749@gmail.com","password":"nuevo","administrador":"false"}
+
+10:02:15.146 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 505
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: b8203dd2f8708675167eff2bef63226d
+1 < date: Fri, 12 Sep 2025 15:02:18 GMT
+1 < server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "jkzeDDKzFoAG59kc"
+}
+
+10:02:15.159 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > PUT https://serverest.dev/usuarios/jkzeDDKzFoAG59kc
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 112
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"NuevoNombre","email":"sandroingsistemas30@gmail.com","password":"nuevoPass123","administrador":"false"}
+
+10:02:15.235 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 528
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: a52dcf23622e194e7d6adf3176a822c2
+1 < date: Fri, 12 Sep 2025 15:02:18 GMT
+1 < server: Google Frontend
+1 < Content-Length: 50
+{
+    "message": "Registro alterado com sucesso"
+}
+
+10:02:15.677 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 518
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < x-cloud-trace-context: 95be8900409e9c10dc04055f6e5b0a77
+1 < date: Fri, 12 Sep 2025 15:02:18 GMT
+1 < server: Google Frontend
+1 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+---------------------------------------------------------
+feature: classpath:examples/features/DELETE-usuarios{_id}.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2.1883
+---------------------------------------------------------
+
+10:02:15.798 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 6 (5 remaining) classpath:examples/features/DELETE-usuarios{_id}.feature
+---------------------------------------------------------
+feature: classpath:examples/features/GET-usuarios.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1.6399
+---------------------------------------------------------
+
+10:02:15.980 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:examples/features/GET-usuarios.feature
+---------------------------------------------------------
+feature: classpath:examples/features/GET-usuarios{_id}.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 4.3767
+---------------------------------------------------------
+
+10:02:16.217 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:examples/features/GET-usuarios{_id}.feature
+---------------------------------------------------------
+feature: classpath:examples/features/POST-usuario.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1.5630
+---------------------------------------------------------
+
+10:02:16.337 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:examples/features/POST-usuario.feature
+---------------------------------------------------------
+feature: classpath:examples/features/POST-usuarioInvalid.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.5565
+---------------------------------------------------------
+
+10:02:16.455 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:examples/features/POST-usuarioInvalid.feature
+---------------------------------------------------------
+feature: classpath:examples/features/PUT-usuarios{_id}.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 2.1501
+---------------------------------------------------------
+
+10:02:16.718 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:examples/features/PUT-usuarios{_id}.feature
+Karate version: 1.4.1 | env: CERTI
+======================================================
+elapsed:   7.46 | threads:    5 | thread time: 12.47 
+features:     6 | skipped:    0 | efficiency: 0.33
+scenarios:    8 | passed:     8 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.4.1 | env: CERTI
+file:///C:/Users/USUARIO/Downloads/SOAINTBackQA-main/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
