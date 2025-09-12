@@ -1,12 +1,17 @@
-Guía de Uso del Framework Karate DSL
+# Reto de Automatización QA - BackEnd
 
-Proyecto: QA Automation Junior con Karate DSL – Yrvin Pachas (Inetum)
+Este proyecto contiene una **automatización de pruebas QA del Backend** para la **API de Usuarios de ServeRest** ([https://serverest.dev/](https://serverest.dev/)) utilizando **Karate DSL**.
 
-Este proyecto contiene pruebas automatizadas utilizando Karate DSL para verificar el correcto funcionamiento de la API de gestión de usuarios del sistema ServeRest. 
-He utilizado un enfoque de reutilización de funciones para optimizar el tiempo y mejorar la eficiencia de las pruebas, eliminando la necesidad de crear un usuario manualmente en cada prueba. 
-Esto permite ejecutar las pruebas de GET, PUT y DELETE sin necesidad de manejar el ID de los usuarios, ya que el POST de creación de usuario es reutilizado automáticamente.
+---
 
-📁 Estructura del Proyecto
+## 🎯 Objetivo
+
+Automatizar pruebas para la API de usuarios, incluyendo operaciones **CRUD** y escenarios positivos y negativos, siguiendo buenas prácticas de automatización y reutilización de código.
+
+---
+
+## 📁 Estructura del Proyecto
+
 ```
 features/
 ├── POST-usuario.feature      # Crea un usuario con email aleatorio y devuelve su ID
@@ -20,108 +25,102 @@ features/
 karate-config.js                    # Configuración de entornos y baseUrl
 pom.xml                             # Dependencias y plugin para Karate DSL
 ```
-⚙️ Requisitos Previos
+## ⚙️ Requisitos del Entorno
 
-Java 8+ (utilize  Java 17)
+* **Java 11 o superior** (se recomienda Java 17)
+* **Maven o Gradle** configurado en la variable de entorno \$PATH
+* IDE compatible (IntelliJ, VS Code, Eclipse, etc.)
+* Acceso a la API: [https://serverest.dev](https://serverest.dev)
 
-Maven  o Gradle  instalado y en $PATH
+Instalación de Karate DSL:
+[https://github.com/karatelabs/karate/wiki/Get-Started:-Maven-and-Gradle](https://github.com/karatelabs/karate/wiki/Get-Started:-Maven-and-Gradle)
 
-IDE (IntelliJ, VS Code, etc.)
+## 🧪 Ejecución de Pruebas
 
-Conexión a la API: https://serverest.dev
+Todas las pruebas deben ejecutarse desde la terminal o línea de comandos.
 
+### 1️⃣ Ejecución por Etiquetas
 
-La instalacion de Karate DSL la realize mediante :
-https://github.com/karatelabs/karate/wiki/Get-Started:-Maven-and-Gradle
-
-
-🧪 Ejecuciones
-
-Todas las ejecuciones tienen que ser por command prompt
-1️⃣ Ejecución por Tags
-Para ejecutar pruebas específicas usando tags:
-
+```bash
 mvn test -Dkarate.options="--tags @Test"
+```
 
-2️⃣ Ejecución por Entornos
-Para ejecutar pruebas en un entorno específico como QA:
+### 2️⃣ Ejecución según Entorno
 
-
+```bash
 mvn test -Dkarate.options="--tags @Test" -Dkarate.env="QA"
+```
 
+### 🧪 Ejecución de Pruebas CRUD
 
-🧪 Ejecución de Pruebas CRUD
+Dado que todas las pruebas reutilizan `crearUsuario.feature`, no es necesario:
 
-Como todos los tests reutilizan POST-usuario.feature, NO necesitamos:
+* Ejecutar un POST manualmente
+* Ingresar IDs manualmente en GET, PUT o DELETE
 
-Ejecutar manualmente un POST
+Solo se debe invocar el comando con la **etiqueta específica**:
 
-No es necesario Introducir un ID en los archivos de GET, PUT o DELETE
+**POST - registro inválido (email duplicado)**
 
-Solo ejecuta el comando con la etiqueta correspondiente:
-
-POST-usuarioInvalid
-Registrar usuario negativo (email duplicado)
-
+```bash
 mvn test -Dkarate.options="--tags @registrarUsuarioEmailExistente" -Dkarate.env=QA
+```
 
-GET/usuarios/{_id}
-Obtener usuario por ID
+**GET /usuarios/{\_id}**
 
+```bash
 mvn test -Dkarate.options="--tags @buscarUsuarioId" -Dkarate.env=QA
+```
 
-PUT/usuarios/{_id}
-Actualizar usuario
+**PUT /usuarios/{\_id}**
 
+```bash
 mvn test -Dkarate.options="--tags @actualizarUsuario" -Dkarate.env=QA
+```
 
-DELETE/usuarios/{_id}
-Eliminar usuario
+**DELETE /usuarios/{\_id}**
 
+```bash
 mvn test -Dkarate.options="--tags @eliminarUsuario" -Dkarate.env=QA
+```
 
-GET/usuarios
-Listar todos los usuarios
+**GET /usuarios (listado general)**
 
+```bash
 mvn test -Dkarate.options="--tags @listarUsuarios" -Dkarate.env=QA
+```
 
-🌎 Entornos (env)
+## 🌎 Configuración de Entornos
 
-Para cambiar la baseUrl según el entorno, ajusta karate.env:
+Para ajustar la `baseUrl` según el entorno, modifique `karate.env`:
 
-if (env == 'QA') {
-config.baseUrl = 'https://serverest.dev/'
+```javascript
+if (env === 'CERTI') {
+    config.baseUrl = 'https://serverest.dev/';
 }
+```
 
-Las URLs se definen en karate-config.js.
+Todas las URLs se gestionan desde `karate-config.js`.
 
-🎯 Practicas utilizadas
+## 🎯 Estrategias y Buenas Prácticas
 
-A modo de practica Genere emails únicos usando java.util.UUID para no colisionar.
+* Creación de **emails únicos** utilizando `java.util.UUID` para evitar duplicidades
+* Uso de `call read()` para encadenar features y compartir variables globales
+* Cada feature enfocado en un escenario principal para mejorar la mantenibilidad
+* Cobertura de escenarios **positivos y negativos**
+* Configuración centralizada de entornos en `karate-config.js`
 
-Utilizar call read() para encadenar features y compartir variables.
+## 🛠 Posibles Mejoras
 
-Mantener cada feature enfocado a un solo escenario principal.
+* Modularización de Requests para reutilización avanzada
+* Validaciones detalladas de **schemas** y **responses**
+* Ampliación de escenarios de prueba
+* Integración de reportes visuales más completos (Cucumber / Karate HTML Reports)
 
-Scenarios positivos y negativos 
+## 📊 Generación de Reportes
 
-Configuracion en Karate-config para entornos 
+Los reportes se generan en `target/karate-reports/`, incluyendo:
 
-🛠 Mejoras Futuras
-Se pueden mejorar las validaciones creando carpetas para:
+* `karate-summary.html`: Resumen consolidado de todas las ejecuciones
 
-Requests: Modularización de las solicitudes de la API.
-
-Schemas y Response: Validaciones específicas de las respuestas.
-
-Más Scenarios de prueba.
-
-Reporte de Cucumber: Para obtener resultados más detallados y visuales.
-
-📊 Ver Reportes
-Después de ejecutar las pruebas, Karate genera los reportes en la carpeta target/karate-reports/. Dentro de esta carpeta, puedes encontrar:
-
-karate-summary.html: Un resumen general de las ejecuciones.
-
-
-Para ver los reportes, solo abre karate-summary.html  en tu navegador.
+Se recomienda abrir `karate-summary.html` en un navegador para revisar los resultados de manera visual.
