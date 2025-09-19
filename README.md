@@ -48,7 +48,7 @@ mvn test -Dkarate.options="--tags @Test"
 ### 2️⃣ Ejecución según Entorno
 
 ```bash
-mvn test -Dkarate.options="--tags @Test" -Dkarate.env="QA"
+mvn test -Dkarate.options="--tags @Test" -Dkarate.env="CERTI"
 ```
 
 ### 🧪 Ejecución de Pruebas CRUD
@@ -63,31 +63,31 @@ Solo se debe invocar el comando con la **etiqueta específica**:
 **POST - registro inválido (email duplicado)**
 
 ```bash
-mvn test -Dkarate.options="--tags @registrarUsuarioEmailExistente" -Dkarate.env=QA
+mvn test -Dkarate.options="--tags @registrarUsuarioEmailExistente" -Dkarate.env="CERTI"
 ```
 
 **GET /usuarios/{\_id}**
 
 ```bash
-mvn test -Dkarate.options="--tags @buscarUsuarioId" -Dkarate.env=QA
+mvn test -Dkarate.options="--tags @buscarUsuarioId" -Dkarate.env="CERTI"
 ```
 
 **PUT /usuarios/{\_id}**
 
 ```bash
-mvn test -Dkarate.options="--tags @actualizarUsuario" -Dkarate.env=QA
+mvn test -Dkarate.options="--tags @actualizarUsuario" -Dkarate.env="CERTI"
 ```
 
 **DELETE /usuarios/{\_id}**
 
 ```bash
-mvn test -Dkarate.options="--tags @eliminarUsuario" -Dkarate.env=QA
+mvn test -Dkarate.options="--tags @eliminarUsuario" -Dkarate.env="CERTI"
 ```
 
 **GET /usuarios (listado general)**
 
 ```bash
-mvn test -Dkarate.options="--tags @listarUsuarios" -Dkarate.env=QA
+mvn test -Dkarate.options="--tags @listarUsuarios" -Dkarate.env="CERTI"
 ```
 
 ## 🌎 Configuración de Entornos
